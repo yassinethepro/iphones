@@ -1,0 +1,107 @@
+:root{
+    --skyblue: #adcbe5;
+    --black:#5a5955;
+    --bieg:#e6d1b4;
+    --red:#e60000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background-color: #000;
+    color: white;
+}
+.mlr{
+    margin: 20px 40px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    display: inline-flex;
+    gap: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    list-style: none;
+    
+}
+li{
+   border-bottom: 2px solid transparent; 
+}
+li:hover{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+.img img{
+    width: 60px;
+    cursor: pointer;
+}
+
+/*main section*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    top: 200px;
+}
+main h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 20px;
+    
+}
+main p{
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+main .btn{
+    width: 190px;
+    padding: 15px 20px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+/*images section*/
+
+.main-img{
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    
+}
+.small-img img{
+    width: 100px;
+    transition: 0.3s;
+}
+.small-img img:hover{
+    transform: scale(1.1);
+  
+}
+.small-img{
+    display: flex;
+    position: relative;
+    left: 50%;
+    cursor: pointer;
+    width: fit-content;
+    transform: translateX(-50%);
+    top: 300px;
+    gap: 20px;
+    
+}
+
+
